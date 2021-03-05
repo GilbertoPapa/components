@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MultiSlideUpPanel">
+        <attr name="decorParallax" format="boolean" />
+        <attr name="decorVelocity" format="float" />
+        <attr name="decorFadeColor" format="color" />
+        <attr name="decorEnable" format="boolean" />
+        <attr name="decorGravity" format="enum">
+            <enum name="Up" value="0"/>
+            <enum name="Bottom" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MultiSlideUpPanel_Layout">
+        <attr name="panelHeightPercent" format="float" />
+        <attr name="panelEnable" format="boolean" />
+        <attr name="panelClickable" format="boolean" />
+        <attr name="panelState" format="enum">
+            <enum name="expanded" value="0" />
+            <enum name="collapsed" value="1" />
+            <enum name="anchored" value="2" />
+            <enum name="hidden" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>

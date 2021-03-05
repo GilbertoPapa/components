@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.gilbertopapa.component.slide.MultiSlideUpPanel
+        android:id="@+id/customPanel"
+        app:decorGravity="Bottom"
+        app:decorParallax="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="7dp"
+            app:cardBackgroundColor="#7CB342"
+            app:panelHeightPercent="0.05"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <com.gilbertopapa.component.dragdrop.DragAndDropContainer
+                    android:id="@+id/dragAndDropContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/button1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clickable="false"
+
+                            />
+
+                    </FrameLayout>
+
+                </com.gilbertopapa.component.dragdrop.DragAndDropContainer>
+
+                <com.gilbertopapa.component.dragdrop.DragAndDropContainer
+                    android:id="@+id/dragAndDropContainer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dragAndDropContainer">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                    </FrameLayout>
+
+                </com.gilbertopapa.component.dragdrop.DragAndDropContainer>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </com.gilbertopapa.component.slide.MultiSlideUpPanel>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
